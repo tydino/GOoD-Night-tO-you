@@ -14,12 +14,6 @@ public class PlayerCam : MonoBehaviour
     float xRotation;
     float yRotation;
 
-    void Start()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-    }
-
     void Update()
     {
         // get mouse input
