@@ -6,14 +6,18 @@ public class PlayerCam : MonoBehaviour
 {
     public static float BaseSensX = 125.0f;
     public static float BaseSensY = -125.0f;
-    private float sensX;
-    private float sensY;
+    public float sensX;
+    public float sensY;
 
     public Transform orientation;
 
     float xRotation;
     float yRotation;
 
+    void Start (){
+        sensX = BaseSensX * 5;
+        sensY = BaseSensY * 5;
+    }
     void Update()
     {
         // get mouse input
