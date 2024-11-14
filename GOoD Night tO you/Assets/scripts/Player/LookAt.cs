@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class LookAt : MonoBehaviour
 {
+    bool now = false;
     public Transform Target;
 
     void Update()
     {
-        transform.LookAt(Target);
+        if(now){
+            transform.LookAt(Target);
+        }
     }
 }
