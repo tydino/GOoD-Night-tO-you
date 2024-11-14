@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class PlayerCam : MonoBehaviour
 {
-    public float sensX;
-    public float sensY;
+    public static float BaseSensX = 125.0f;
+    public static float BaseSensY = -125.0f;
+    private float sensX;
+    private float sensY;
 
     public Transform orientation;
 
