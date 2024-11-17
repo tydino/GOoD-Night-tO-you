@@ -1188,6 +1188,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2109455608492278045, guid: 280d32ab620730b49b33db589f821c7c, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2109455608492278045, guid: 280d32ab620730b49b33db589f821c7c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 4874126678125670354, guid: febcb7a4b864905408e3604b3d4c56bf, type: 3}
+    - target: {fileID: 2109455608492278045, guid: 280d32ab620730b49b33db589f821c7c, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: a5aa7677a3e2ba244aab07e8a81439a9, type: 2}
+    - target: {fileID: 2109455608492278045, guid: 280d32ab620730b49b33db589f821c7c, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: a5aa7677a3e2ba244aab07e8a81439a9, type: 2}
     - target: {fileID: 2387931197758835791, guid: 280d32ab620730b49b33db589f821c7c, type: 3}
       propertyPath: m_Name
       value: chickn_main
@@ -1231,6 +1247,10 @@ PrefabInstance:
     - target: {fileID: 3055818144024975093, guid: 280d32ab620730b49b33db589f821c7c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8125763903400412440, guid: 280d32ab620730b49b33db589f821c7c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
