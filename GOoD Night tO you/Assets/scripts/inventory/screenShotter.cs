@@ -7,7 +7,8 @@ using System.IO;
 public class screenShotter : MonoBehaviour
 {
     public Camera setToDepthOnly;
-    public void TakeScreenshot(string fullPath){
+    public string fullPath;
+    public void Start(){
          Camera camera = setToDepthOnly;
 
          RenderTexture rt = new RenderTexture(256, 256, 24);
