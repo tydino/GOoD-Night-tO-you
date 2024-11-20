@@ -1,18 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using Unity.Properties;
 
 public class InventorySystem : MonoBehaviour //original by game dev guide; https://www.youtube.com/watch?v=SGz3sbZkfkg
 {
+    public UnityEvent onInventoryChangedEvent;
     Dictionary<InventoryItemData, InventoryItem> m_itemDictionary;
     public static InventorySystem current;
-    public static List<InventoryItem> inventory {get; private set;}
+    public List<InventoryItem> ININVENTORY;
+    public List<InventoryItem> inventory {get; private set;}
 
     void Awake(){
         current=this;
         inventory = new List<InventoryItem>();
         m_itemDictionary = new Dictionary<InventoryItemData, InventoryItem>();
+    }
+
+    void Update(){
+        ININVENTORY = inventory;
     }
 
     public InventoryItem Get(InventoryItemData referenceData){
@@ -30,6 +37,7 @@ public class InventorySystem : MonoBehaviour //original by game dev guide; https
             inventory.Add(newItem);
             m_itemDictionary.Add(referenceData, newItem);
         }
+        onInventoryChangedEvent.Invoke();
     }
 
     public void Remove(InventoryItemData referenceData){
@@ -41,13 +49,14 @@ public class InventorySystem : MonoBehaviour //original by game dev guide; https
                 m_itemDictionary.Remove(referenceData);
             }
         }
+        onInventoryChangedEvent.Invoke();
     }
 }
 
 [System.Serializable]
 public class InventoryItem{
-    public InventoryItemData data {get; private set;}
-    public int stackSize {get; private set;}
+    public InventoryItemData data;
+    public int stackSize;
 
     public InventoryItem(InventoryItemData source){
         data = source;
