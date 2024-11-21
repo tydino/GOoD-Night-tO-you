@@ -6,6 +6,10 @@ public class InventoryManager : MonoBehaviour
 {
     public GameObject m_SlotPrefab;
     public int WhichObjects;
+
+    public void SwitchObject(int objectId){
+        WhichObjects=objectId;
+    }
     void Update()
     {
         OnUpdateInventory();
