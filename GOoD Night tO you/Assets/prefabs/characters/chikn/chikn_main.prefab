@@ -470,13 +470,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4217508614184716742}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: -150, z: 2.54}
+  m_LocalRotation: {x: -0, y: -0.7071067, z: -0.7071068, w: 0}
+  m_LocalPosition: {x: 0, y: -2.539978, z: -149.99998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8875202052836485405}
-  m_Father: {fileID: 3055818144024975093}
+  m_Father: {fileID: 6257935556935059051}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &7312305613921193254
 Camera:
@@ -985,7 +985,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f2cde89698740b24fbe7c3c7ecd68ad5, type: 2}
     - target: {fileID: 919132149155446097, guid: febcb7a4b864905408e3604b3d4c56bf, type: 3}
       propertyPath: m_Name
-      value: chickn_main
+      value: chikn_main
       objectReference: {fileID: 0}
     - target: {fileID: 2236237030686087061, guid: febcb7a4b864905408e3604b3d4c56bf, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1010,12 +1010,12 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: febcb7a4b864905408e3604b3d4c56bf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8674757457579782284}
     - targetCorrespondingSourceObject: {fileID: 8879528566716807029, guid: febcb7a4b864905408e3604b3d4c56bf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2262122437809560715}
+    - targetCorrespondingSourceObject: {fileID: 8879528566716807029, guid: febcb7a4b864905408e3604b3d4c56bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8674757457579782284}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7036213049465896255, guid: febcb7a4b864905408e3604b3d4c56bf, type: 3}
       insertIndex: -1
@@ -1265,11 +1265,6 @@ MonoBehaviour:
   - {fileID: 1792067652902082291}
   - {fileID: 6348251302352369933}
   - {fileID: 3939242918083532793}
---- !u!4 &3055818144024975093 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: febcb7a4b864905408e3604b3d4c56bf, type: 3}
-  m_PrefabInstance: {fileID: 3306428363780927774}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3224215403395842229 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -9125280449081331285, guid: febcb7a4b864905408e3604b3d4c56bf, type: 3}
