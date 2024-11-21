@@ -21,9 +21,9 @@ public class InventoryManager : MonoBehaviour
 
     void DrawInventory(){
         foreach(InventoryItem item in InventorySystem.current.inventory){
-            if (WhichObjects==0 && item.whereIsItSorted == objects){AddInventorySlot(item);}
-            if (WhichObjects==1 && item.whereIsItSorted == plushies){AddInventorySlot(item);}
-            if (WhichObjects==2 && item.whereIsItSorted == collectables){AddInventorySlot(item);}
+            if (WhichObjects==0 && item.data.whereIsItSorted == InventoryItemType.objects){AddInventorySlot(item);}
+            if (WhichObjects==1 && item.data.whereIsItSorted == InventoryItemType.plushies){AddInventorySlot(item);}
+            if (WhichObjects==2 && item.data.whereIsItSorted == InventoryItemType.collectables){AddInventorySlot(item);}
         }
     }
     public void AddInventorySlot(InventoryItem item){
