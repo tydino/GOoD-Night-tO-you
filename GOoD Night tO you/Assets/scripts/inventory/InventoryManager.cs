@@ -5,6 +5,7 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour
 {
     public GameObject m_SlotPrefab;
+    public int WhichObjects;
     void Update()
     {
         OnUpdateInventory();
@@ -20,7 +21,9 @@ public class InventoryManager : MonoBehaviour
 
     void DrawInventory(){
         foreach(InventoryItem item in InventorySystem.current.inventory){
-            AddInventorySlot(item);
+            if (WhichObjects==0 && item.whereIsItSorted == objects){AddInventorySlot(item);}
+            if (WhichObjects==1 && item.whereIsItSorted == plushies){AddInventorySlot(item);}
+            if (WhichObjects==2 && item.whereIsItSorted == collectables){AddInventorySlot(item);}
         }
     }
     public void AddInventorySlot(InventoryItem item){
