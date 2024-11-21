@@ -10,12 +10,8 @@ public class InventoryManager : MonoBehaviour
     public void SwitchObject(int objectId){
         WhichObjects=objectId;
     }
-    void Update()
-    {
-        OnUpdateInventory();
-    }
 
-    void OnUpdateInventory(){
+    public void OnUpdateInventory(){
         foreach(Transform t in transform){
             Destroy(t.gameObject);
         }

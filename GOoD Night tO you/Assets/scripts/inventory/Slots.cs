@@ -15,11 +15,17 @@ public class Slots : MonoBehaviour
     public GameObject m_stackObj;
 
     [SerializeField]
-    public Text m_stackLabel;
+    public GameObject m_objectPrefab;
 
+    [SerializeField]
+    public Text m_stackLabel;
+    public void SetAsHold(){
+        HoldObject.ObjectToHold(m_objectPrefab);
+    }
     public void Set(InventoryItem item){
         m_icon.sprite = item.data.icon;
         m_label.text = item.data.displayName;
+        m_objectPrefab = item.data.prefab;
         if(item.stackSize <=1){
             m_stackObj.SetActive(false);
             return;
