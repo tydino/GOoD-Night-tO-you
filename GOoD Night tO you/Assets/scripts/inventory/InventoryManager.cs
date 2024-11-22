@@ -28,6 +28,7 @@ public class InventoryManager : MonoBehaviour
             if (WhichObjects==0 && item.data.whereIsItSorted == InventoryItemType.objects){AddInventorySlot(item);}
             if (WhichObjects==1 && item.data.whereIsItSorted == InventoryItemType.plushies){AddInventorySlot(item);}
             if (WhichObjects==2 && item.data.whereIsItSorted == InventoryItemType.collectables){AddInventorySlot(item);}
+            if (WhichObjects==3 && item.data.whereIsItSorted == InventoryItemType.weapons){AddInventorySlot(item);}
         }
     }
     public void AddInventorySlot(InventoryItem item){
