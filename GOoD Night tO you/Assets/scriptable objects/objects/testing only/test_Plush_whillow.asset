@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 183106cb98506a64bba5b7d38032d754, type: 3}
   m_Name: test_Plush_whillow
   m_EditorClassIdentifier: 
-  id: -4
+  id: 1
   displayName: whillow plush
   icon: {fileID: 0}
   prefab: {fileID: 5960816655237994269, guid: 4ff028da7adcbd9419863deedef9ae5f, type: 3}
+  WhenHold: {fileID: 0}
   whereIsItSorted: 1

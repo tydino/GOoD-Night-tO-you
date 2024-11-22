@@ -19,7 +19,7 @@ public class Slots : MonoBehaviour
     public GameObject m_objectPrefab;
 
     [SerializeField]
-    public GameObject m_holdPrefab
+    public GameObject m_holdPrefab;
 
     [SerializeField]
     public Text m_stackLabel;
