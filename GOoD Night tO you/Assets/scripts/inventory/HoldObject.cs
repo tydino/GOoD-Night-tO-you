@@ -22,15 +22,16 @@ public class HoldObject : MonoBehaviour
         itemBeingHeldDrop = Drop;
         m_Iid = iid;
     }
-    public void dropOrStopHold(bool hold, GameObject ItemBeingDropped){
+    public void dropOrStopHold(bool hold){
         if (holdingObject && itemBeingHeldDrop != null){
             holdingObject=false;
             animator.SetBool("hold", false);
             Destroy(ItemBeingHeld);
-            if (!hold && ItemBeingDropped != null){
-                GameObject obj = Instantiate(ItemBeingDropped);
+            if (!hold && itemBeingHeldDrop != null){
+                GameObject obj = Instantiate(itemBeingHeldDrop);
                 obj.gameObject.transform.position = ObjectThatHolds.gameObject.transform.position;
                 IS.Remove(m_Iid);
+                itemBeingHeldDrop = null;
             }
         }
     }

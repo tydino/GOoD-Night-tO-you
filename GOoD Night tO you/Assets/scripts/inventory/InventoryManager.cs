@@ -15,7 +15,7 @@ public class InventoryManager : MonoBehaviour
         ho.dropOrStopHold(true, null);
     }
     public void DropItem(){
-        ho.dropOrStopHold(false, ho.itemBeingHeldDrop);
+        ho.dropOrStopHold(false);
         OnUpdateInventory();
     }
 
