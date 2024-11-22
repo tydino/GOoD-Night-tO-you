@@ -959,8 +959,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d1578a02e5d7a45ad65a48ac2e5eec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectThatHolds: {fileID: 3053876688469594338}
+  IS: {fileID: 0}
+  ObjectThatHolds: {fileID: 8591359188308860679}
   ItemBeingHeld: {fileID: 0}
+  itemBeingHeldDrop: {fileID: 0}
   animator: {fileID: 3032372314199956998}
 --- !u!4 &6592574073193096697 stripped
 Transform:

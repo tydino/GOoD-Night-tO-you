@@ -20,11 +20,12 @@ public class Slots : MonoBehaviour
 
     [SerializeField]
     public GameObject m_holdPrefab;
+    InventoryItemData iid;
 
     [SerializeField]
     public Text m_stackLabel;
     public void SetAsHold(){
-        ho.ObjectToHold(m_holdPrefab);
+        ho.ObjectToHold(m_holdPrefab, m_objectPrefab, iid);
     }
     public void Set(InventoryItem item){
         ho=GameObject.FindWithTag("player").GetComponent<HoldObject>();
@@ -32,6 +33,7 @@ public class Slots : MonoBehaviour
         m_label.text = item.data.displayName;
         m_objectPrefab = item.data.prefab;
         m_holdPrefab = item.data.WhenHold;
+        iid=item.data;
         if(item.stackSize <=1){
             m_stackObj.SetActive(false);
             return;
