@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HoldObject : MonoBehaviour
 {
+    public static HoldObject current;
     bool holdingObject;
     public InventorySystem IS;
     public GameObject ObjectThatHolds;
@@ -11,6 +12,10 @@ public class HoldObject : MonoBehaviour
     public GameObject ItemBeingHeld;
     public GameObject itemBeingHeldDrop;
     public Animator animator;
+    
+    void Start(){
+        current = this;
+    }
 
     public void ObjectToHold(GameObject obj, GameObject Drop, InventoryItemData iid) {
         holdingObject=true;

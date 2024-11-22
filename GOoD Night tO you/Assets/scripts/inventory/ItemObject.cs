@@ -18,6 +18,7 @@ public class ItemObject : MonoBehaviour {
                 RemoveRequirements();
             }
             InventorySystem.current.Add(referenceItem);
+            HoldObject.current.ObjectToHold(referenceItem.WhenHold, referenceItem.prefab, referenceItem);
             Destroy(gameObject);
         }
     }
