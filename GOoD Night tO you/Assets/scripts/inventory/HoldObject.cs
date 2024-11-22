@@ -23,7 +23,7 @@ public class HoldObject : MonoBehaviour
         m_Iid = iid;
     }
     public void dropOrStopHold(bool hold, GameObject ItemBeingDropped){
-        if (holdingObject){
+        if (holdingObject && itemBeingHeldDrop != null){
             holdingObject=false;
             animator.SetBool("hold", false);
             Destroy(ItemBeingHeld);
