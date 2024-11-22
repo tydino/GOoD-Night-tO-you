@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Slots : MonoBehaviour
 {
+    HoldObject ho;
     [SerializeField]
     public Image m_icon;
 
@@ -20,9 +21,10 @@ public class Slots : MonoBehaviour
     [SerializeField]
     public Text m_stackLabel;
     public void SetAsHold(){
-        HoldObject.ObjectToHold(m_objectPrefab);
+        ho.ObjectToHold(m_objectPrefab);
     }
     public void Set(InventoryItem item){
+        ho=GameObject.FindWithTag("player").GetComponent<HoldObject>();
         m_icon.sprite = item.data.icon;
         m_label.text = item.data.displayName;
         m_objectPrefab = item.data.prefab;

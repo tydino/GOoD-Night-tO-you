@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
+    public HoldObject ho;
     public GameObject m_SlotPrefab;
     public int WhichObjects;
 
     public void SwitchObject(int objectId){
         WhichObjects=objectId;
+    }
+    public void putAway(){
+        ho.dropOrStopHold(true);
     }
 
     public void OnUpdateInventory(){

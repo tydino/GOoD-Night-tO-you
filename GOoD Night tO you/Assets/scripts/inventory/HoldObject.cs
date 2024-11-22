@@ -5,9 +5,18 @@ using UnityEngine;
 public class HoldObject : MonoBehaviour
 {
     public Transform ObjectThatHolds;
-    public static GameObject ItemBeingHeld;
+    public GameObject ItemBeingHeld;
+    public Animator animator;
 
-    public static void ObjectToHold(GameObject obj) {
-        Debug.Log("object being held "+obj.name);
+    public void ObjectToHold(GameObject obj) {
+        Destroy(ItemBeingHeld);
+        animator.SetBool("hold", true);
+        GameObject Objection = Instantiate(obj);
+        Objection.transform.SetParent(ObjectThatHolds, false);
+        ItemBeingHeld = Objection; 
+    }
+    public void dropOrStopHold(bool hold){
+        animator.SetBool("hold", false);
+        Destroy(ItemBeingHeld);
     }
 }
