@@ -8574,6 +8574,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Holder: {fileID: 0}
   Dropkey: 113
+  PutAwaykey: 112
 --- !u!1 &8071365017426893929
 GameObject:
   m_ObjectHideFlags: 0

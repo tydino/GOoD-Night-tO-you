@@ -5,10 +5,14 @@ using UnityEngine;
 public class DropObject : MonoBehaviour {
     public HoldObject Holder;
     public KeyCode Dropkey;
+    public KeyCode PutAwaykey;
 
     void Update(){
-        if(Input.GetKey(Dropkey) && Holder.ItemBeingHeld != null && Holder.itemBeingHeldDrop != null){
+        if(Input.GetKey(Dropkey) == true && Holder.ItemBeingHeld != null && Holder.itemBeingHeldDrop != null){
             Holder.dropOrStopHold(false);
+        }
+        if(Input.GetKey(PutAwaykey) == true && Holder.ItemBeingHeld != null && Holder.itemBeingHeldDrop != null){
+            Holder.dropOrStopHold(true);
         }
     }
 }
