@@ -12,7 +12,7 @@ public class InventoryManager : MonoBehaviour
         WhichObjects=objectId;
     }
     public void putAway(){
-        ho.dropOrStopHold(true, null);
+        ho.dropOrStopHold(true);
     }
     public void DropItem(){
         ho.dropOrStopHold(false);
