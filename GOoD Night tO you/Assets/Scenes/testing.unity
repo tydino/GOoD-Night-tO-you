@@ -631,6 +631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51e2dfa5ed7e9914cacabca3bcd4c192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canMove: 1
   sensX: 0
   sensY: 0
   orientation: {fileID: 288742152}
@@ -1082,6 +1083,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 736458657275339415, guid: 52a05a47e5223954e834719171546aa4, type: 3}
+      propertyPath: pc
+      value: 
+      objectReference: {fileID: 963194230}
+    - target: {fileID: 736458657275339415, guid: 52a05a47e5223954e834719171546aa4, type: 3}
+      propertyPath: playercam
+      value: 
+      objectReference: {fileID: 963194230}
     - target: {fileID: 2087975696631057750, guid: 52a05a47e5223954e834719171546aa4, type: 3}
       propertyPath: m_Camera
       value: 

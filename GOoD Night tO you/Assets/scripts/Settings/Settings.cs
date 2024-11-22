@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class Settings : MonoBehaviour//original by brackeys
 {
+    public static Settings current;
+    public  PlayerCam playercam;
     public AudioMixer audioMixer;
 
     public Dropdown resolutionDropdown;
@@ -13,6 +15,7 @@ public class Settings : MonoBehaviour//original by brackeys
     Resolution[] resolutions;
 
     void Start(){
+        current = this;
         resolutions = Screen.resolutions;
 
         resolutionDropdown.ClearOptions();
