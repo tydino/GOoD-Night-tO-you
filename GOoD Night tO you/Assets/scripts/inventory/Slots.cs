@@ -29,7 +29,9 @@ public class Slots : MonoBehaviour
     }
     public void Set(InventoryItem item){
         ho=GameObject.FindWithTag("player").GetComponent<HoldObject>();
-        m_icon.sprite = item.data.icon;
+        if(item.data.icon != null){
+            m_icon.sprite = item.data.icon;
+        }
         m_label.text = item.data.displayName;
         m_objectPrefab = item.data.prefab;
         m_holdPrefab = item.data.WhenHold;
