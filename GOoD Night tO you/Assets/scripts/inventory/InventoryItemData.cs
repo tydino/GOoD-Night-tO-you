@@ -9,7 +9,8 @@ public class InventoryItemData : ScriptableObject //original by game dev guide; 
     public string displayName;
     public Sprite icon;
     public GameObject prefab;
+    public GameObject WhenHold;
     public InventoryItemType whereIsItSorted; 
 }
 
-public enum InventoryItemType {objects, plushies, collectables}
+public enum InventoryItemType {objects, plushies, collectables, weapons}
