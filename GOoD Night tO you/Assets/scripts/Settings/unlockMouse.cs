@@ -12,10 +12,8 @@ public class unlockMouse : MonoBehaviour
         if (onStart)
         if(onStartLock){
             Cursor.lockState = CursorLockMode.Locked;
-            Settings.current.playercam.canMove = true;
         }else{
             Cursor.lockState = CursorLockMode.None;
-            Settings.current.playercam.canMove = false;
         }
     }
 
@@ -23,10 +21,8 @@ public class unlockMouse : MonoBehaviour
         if (onUpdate)
         if(now){
             Cursor.lockState = CursorLockMode.Locked;
-            Settings.current.playercam.canMove = true;
         }else{
             Cursor.lockState = CursorLockMode.None;
-             Settings.current.playercam.canMove = false;
         }
     }
 }

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Settings : MonoBehaviour//original by brackeys
 {
     public static Settings current;
-    public  PlayerCam playercam;
+    public PlayerCam playercam;
     public AudioMixer audioMixer;
 
     public Dropdown resolutionDropdown;
