@@ -8,11 +8,13 @@ public class DropObject : MonoBehaviour {
     public KeyCode PutAwaykey;
 
     void Update(){
-        if(Input.GetKey(Dropkey) == true && Holder.ItemBeingHeld != null && Holder.itemBeingHeldDrop != null){
-            Holder.dropOrStopHold(false);
-        }
-        if(Input.GetKey(PutAwaykey) == true && Holder.ItemBeingHeld != null && Holder.itemBeingHeldDrop != null){
-            Holder.dropOrStopHold(true);
+        if (Holder.canDrop){
+            if(Input.GetKey(Dropkey) == true && Holder.ItemBeingHeld != null && Holder.itemBeingHeldDrop != null){
+                Holder.dropOrStopHold(false);
+            }
+            if(Input.GetKey(PutAwaykey) == true && Holder.ItemBeingHeld != null && Holder.itemBeingHeldDrop != null){
+                Holder.dropOrStopHold(true);
+            }
         }
     }
 }

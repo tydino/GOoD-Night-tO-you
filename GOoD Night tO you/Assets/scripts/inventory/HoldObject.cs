@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class HoldObject : MonoBehaviour
 {
+    public bool canHold = true;
+    public bool canDrop = false;
     public static HoldObject current;
     bool holdingObject;
     public InventorySystem IS;
@@ -18,17 +20,23 @@ public class HoldObject : MonoBehaviour
     }
 
     public void ObjectToHold(GameObject obj, GameObject Drop, InventoryItemData iid) {
-        holdingObject=true;
-        Destroy(ItemBeingHeld);
-        animator.SetBool("hold", true);
-        GameObject Objection = Instantiate(obj);
-        Objection.transform.SetParent(ObjectThatHolds.transform, false);
-        ItemBeingHeld = Objection; 
-        itemBeingHeldDrop = Drop;
-        m_Iid = iid;
+        if (canHold == true){
+            canHold = false;
+            canDrop = true;
+            holdingObject=true;
+            Destroy(ItemBeingHeld);
+            animator.SetBool("hold", true);
+            GameObject Objection = Instantiate(obj);
+            Objection.transform.SetParent(ObjectThatHolds.transform, false);
+            ItemBeingHeld = Objection; 
+            itemBeingHeldDrop = Drop;
+            m_Iid = iid;
+        }
     }
     public void dropOrStopHold(bool hold){
-        if (holdingObject && itemBeingHeldDrop != null){
+        if (holdingObject && itemBeingHeldDrop != null && canDrop == true){
+            canHold = true;
+            canDrop = false;
             holdingObject=false;
             animator.SetBool("hold", false);
             Destroy(ItemBeingHeld);
