@@ -7,7 +7,7 @@ public class LoadNewAreas : MonoBehaviour
     public GameObject[] previousAreas;
     public GameObject[] whatIsBeingLoaded;
 
-    void OnTriggerStay(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
