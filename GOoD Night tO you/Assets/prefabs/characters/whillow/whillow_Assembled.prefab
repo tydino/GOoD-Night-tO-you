@@ -4058,6 +4058,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 9125001848208118921}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 67ed9bcb93b4ff44f9a258c31349d93d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 67ed9bcb93b4ff44f9a258c31349d93d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -4097,6 +4101,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8008345254049700440, guid: 67ed9bcb93b4ff44f9a258c31349d93d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.315
+      objectReference: {fileID: 0}
+    - target: {fileID: -8008345254049700440, guid: 67ed9bcb93b4ff44f9a258c31349d93d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -860872123042464642, guid: 67ed9bcb93b4ff44f9a258c31349d93d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.221
+      objectReference: {fileID: 0}
+    - target: {fileID: -860872123042464642, guid: 67ed9bcb93b4ff44f9a258c31349d93d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 673623863570565911, guid: 67ed9bcb93b4ff44f9a258c31349d93d, type: 3}
       propertyPath: m_UpdateWhenOffscreen
       value: 1
@@ -4104,6 +4124,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 67ed9bcb93b4ff44f9a258c31349d93d, type: 3}
       propertyPath: m_Name
       value: whillow_tail
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241786802683044900, guid: 67ed9bcb93b4ff44f9a258c31349d93d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.196
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241786802683044900, guid: 67ed9bcb93b4ff44f9a258c31349d93d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
