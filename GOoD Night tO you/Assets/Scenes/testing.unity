@@ -1767,25 +1767,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: whillow_Assembled
       objectReference: {fileID: 0}
-    - target: {fileID: 2765640399412216412, guid: 3cdb56624ee4bca408fadd9fe3664e99, type: 3}
-      propertyPath: m_UpdateWhenOffscreen
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3114852656028444634, guid: 3cdb56624ee4bca408fadd9fe3664e99, type: 3}
-      propertyPath: m_UpdateWhenOffscreen
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3221680092251031290, guid: 3cdb56624ee4bca408fadd9fe3664e99, type: 3}
-      propertyPath: m_UpdateWhenOffscreen
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3561315460429562227, guid: 3cdb56624ee4bca408fadd9fe3664e99, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.8
       objectReference: {fileID: 0}
     - target: {fileID: 3561315460429562227, guid: 3cdb56624ee4bca408fadd9fe3664e99, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.025000334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3561315460429562227, guid: 3cdb56624ee4bca408fadd9fe3664e99, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1819,37 +1807,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3831975927274871473, guid: 3cdb56624ee4bca408fadd9fe3664e99, type: 3}
-      propertyPath: m_UpdateWhenOffscreen
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5437966852960776414, guid: 3cdb56624ee4bca408fadd9fe3664e99, type: 3}
-      propertyPath: m_UpdateWhenOffscreen
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5549498796538361985, guid: 3cdb56624ee4bca408fadd9fe3664e99, type: 3}
-      propertyPath: m_UpdateWhenOffscreen
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5549498796538361985, guid: 3cdb56624ee4bca408fadd9fe3664e99, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 4bd5457a08cb8704ea09aa314fb5a6a3, type: 2}
-    - target: {fileID: 5564593011353731767, guid: 3cdb56624ee4bca408fadd9fe3664e99, type: 3}
-      propertyPath: m_UpdateWhenOffscreen
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6634785420763485999, guid: 3cdb56624ee4bca408fadd9fe3664e99, type: 3}
-      propertyPath: m_UpdateWhenOffscreen
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7608087364412956332, guid: 3cdb56624ee4bca408fadd9fe3664e99, type: 3}
-      propertyPath: m_UpdateWhenOffscreen
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8612808262378168760, guid: 3cdb56624ee4bca408fadd9fe3664e99, type: 3}
-      propertyPath: m_IsActive
-      value: 1
+    - target: {fileID: 4893987777478700619, guid: 3cdb56624ee4bca408fadd9fe3664e99, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
