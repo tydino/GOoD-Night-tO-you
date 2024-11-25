@@ -6,12 +6,9 @@ using UnityEngine.Playables;
 public class OnTriggerPlayTimeLInes : MonoBehaviour
 {
     public PlayableDirector[] startThese;
-    public PlayableDirector[] endThese;
-    public Transform BarrierPlacement;
-    public GameObject barrier;
+    public PlayableDirector[] endThese;    
+    public BarrierClass Barrier;
     GameObject barrierClone;
-    public bool usesBarrier;
-    public Transform ParentToBarrier; 
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
@@ -24,11 +21,11 @@ public class OnTriggerPlayTimeLInes : MonoBehaviour
             {
                 StopAndPlayTimeLines.current.StopTimeLine(endThese[i]);
             }
-            if (usesBarrier == true)
+            if (Barrier.usesBarrier == true)
             {
-                barrierClone = Instantiate(barrier);
-                barrierClone.transform.SetParent(ParentToBarrier, false);
-                barrierClone.transform.position = BarrierPlacement.position;
+            barrierClone = Instantiate(Barrier.BarrierObject);
+            barrierClone.transform.SetParent(Barrier.BarrierParent, false);
+            barrierClone.transform.position = Barrier.barrierPlacement.position;
             }
         }
 
