@@ -13,4 +13,4 @@ public class InventoryItemData : ScriptableObject //original by game dev guide; 
     public InventoryItemType whereIsItSorted; 
 }
 
-public enum InventoryItemType {objects, plushies, collectables, weapons}
+public enum InventoryItemType {objects, plushies, collectables, weapons, keys}
