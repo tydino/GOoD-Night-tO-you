@@ -62,9 +62,9 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_SkipOnDrop: 1
-  m_Looping: 0
+  m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
@@ -110,7 +110,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c52ee79aea9e47f499afa355f84ad19f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.98
+      value: 4.01
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c52ee79aea9e47f499afa355f84ad19f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -118,7 +118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c52ee79aea9e47f499afa355f84ad19f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.978753
+      value: -6.8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c52ee79aea9e47f499afa355f84ad19f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -186,7 +186,7 @@ AudioSource:
   m_GameObject: {fileID: 3084160608533459250}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -826366081356360873, guid: f512c994e3df24146b4b1a0a96144fd7, type: 2}
+  OutputAudioMixerGroup: {fileID: 1042719122914631669, guid: f512c994e3df24146b4b1a0a96144fd7, type: 2}
   m_audioClip: {fileID: 8300000, guid: 43cc30b008064b848984503319918a68, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -198,7 +198,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 1000
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
