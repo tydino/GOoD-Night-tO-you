@@ -64,14 +64,31 @@ public class KeyHandler implements KeyListener {
     //title//
 
     public void titleState(int code){
-        if(code == upKey){
-            upPressed = true;
+        if (code == KeyEvent.VK_W) {
+            gp.ui.commandNum--;
+            if(gp.ui.commandNum < 0){
+                gp.ui.commandNum = 2;
+            }
         }
-        if(code == downKey){
-            downPressed = true;
+        if (code == KeyEvent.VK_S) {
+            gp.ui.commandNum++;
+            if(gp.ui.commandNum > 2){
+                gp.ui.commandNum = 0;
+            }
         }
-        if(code == enterKey){
-            enterPressed = true;
+        if(code == KeyEvent.VK_ENTER){
+            if(gp.ui.commandNum == 0){
+                gp.gameState = gp.playState;
+            }
+            if(gp.ui.commandNum == 1){
+                //add later
+            }
+            if(gp.ui.commandNum ==2){
+                gp.gameState = gp.settingsState;
+            }
+            if(gp.ui.commandNum == 3){
+                System.exit(0);
+            }
         }
     }
 
